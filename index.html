@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <title>Notion Timer</title>
     <style>
 
 body{
@@ -25,9 +27,11 @@ body{
   padding: 20px;
   width: 100px;
   border-radius: 5px;
+  background-color: #eeeeee;
+  color: #183059;
 }
 
-.days {
+/* .days {
   background: #EF2F3C;
 }
 
@@ -42,7 +46,7 @@ body{
 
 .seconds {
   background: #F0A202;
-}
+} */
 
 .numbers {
   font-family: 'Montserrat', sans-serif;
@@ -104,7 +108,7 @@ body{
 <script>
     const year = new Date().getFullYear();
 const myDate = new Date('Jan 01, 2025 00:00:00');
-console.log(myDate);
+// console.log(myDate);
 
 // countdown
 let timer = setInterval(function() {
